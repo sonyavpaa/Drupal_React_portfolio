@@ -1,6 +1,6 @@
 # Drupal React Portfolio
 
-School project done during web dev studies in Business College Helsinki in autumn 2022; a custom React theme to be used inside Drupal 9. Place the folder inside Drupal project root folder's theme folder. clear cache and install in site/admin/appearance. When making changes inside React theme, go to React theme's root folder and run npm start to view changes.
+School project done during web dev studies in Business College Helsinki in autumn 2022; a custom React theme to be used inside Drupal 9. Place the folder inside Drupal project root folder's theme folder, clear cache and install it in site/admin/appearance. When making changes inside React theme, go to React theme's root folder and run npm start to view changes.
 
 <img alt="Drupal Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" height="50px">
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="50px">
