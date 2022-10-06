@@ -1,9 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import React from "react";
-import dotenv from "dotenv";
-dotenv.config();
-import env from "react-dotenv";
 
 const Main = () => {
   const [list, setList] = useState();
@@ -11,9 +8,7 @@ const Main = () => {
   const getData = async () => {
     let arr = [];
     await axios
-      .get(
-        `https://api.thecatapi.com/v1/images/search?header=YOUR_API_KEY_HERE`
-      )
+      .get(`https://api.thecatapi.com/v1/images/search?limit=10`)
       .catch((err) => {
         console.log("Error:", err);
       })
