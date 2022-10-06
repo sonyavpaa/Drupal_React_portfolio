@@ -6,3 +6,13 @@ School project done during web dev studies in Business College Helsinki in autum
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="50px">
 
 ---
+
+Cat Api
+
+- the React App is using images from The Cat Api https://thecatapi.com/: to make the fetch work, you need your own api key. To get one, register at the web site and place it in custom/react/js/src/components/Main.js:
+
+```js
+await axios.get(
+  `https://api.thecatapi.com/v1/images/search?header=YOUR_API_KEY_HERE`
+);
+```

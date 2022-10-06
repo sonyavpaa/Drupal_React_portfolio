@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import React from "react";
+import dotenv from "dotenv";
+dotenv.config();
+import env from "react-dotenv";
 
 const Main = () => {
   const [list, setList] = useState();
@@ -9,7 +12,7 @@ const Main = () => {
     let arr = [];
     await axios
       .get(
-        `https://api.thecatapi.com/v1/images/search?header=live_6I80cMR85j1qLgk1IHXnzawRSYmYoFGY6UqjC079ZMHpuwn9wfOvQ6HZeoUiHUfV&limit=10`
+        `https://api.thecatapi.com/v1/images/search?header=YOUR_API_KEY_HERE`
       )
       .catch((err) => {
         console.log("Error:", err);
