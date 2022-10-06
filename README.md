@@ -9,10 +9,12 @@ School project done during web dev studies in Business College Helsinki in autum
 
 Cat Api
 
-- the React App is using images from The Cat Api https://thecatapi.com/: to make the fetch work, you need your own api key. To get one, register at the web site and place it in custom/react/js/src/components/Main.js:
+- the React App is using images from The Cat Api https://thecatapi.com/: to make the fetch work, you (should) need your own api key. To get one, register at the web site and place it in custom/react/js/src/components/Main.js:
 
 ```js
 await axios.get(
   `https://api.thecatapi.com/v1/images/search?header=YOUR_API_KEY_HERE`
 );
 ```
+
+If wanting to fetch more than one picture, check The Cat Api documentation.
